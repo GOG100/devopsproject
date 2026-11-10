@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web/index.html:/usr/share/nginx/html/index.html
+
+  storage:
+    image: httpd:alpine
+    ports:
+      - "8081:80"
+    volumes:
+      - ./storage/images:/usr/local/apache2/htdocs/
