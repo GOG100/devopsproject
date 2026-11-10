@@ -1,0 +1,2 @@
+# devopsproject
+ברוך אתה השם
